@@ -1,0 +1,29 @@
+./sfra name: apte_x_ary=0 file: tests/apte cycles: 60000 warmup: 1000 n_fps: 10 n_best: 3 mode: 2.5D alpha: 0.25 fp_criteria: A scale: 1.366 seed: 1 times: 60 local: 10 avg_ratio: 20 loadsweep excel verbose: 0
+./sfra name: apte_x_ary=1 file: tests/apte cycles: 60000 warmup: 1000 n_fps: 10 n_best: 3 mode: 2.5D alpha: 0.25 fp_criteria: A scale: 1.366 seed: 1 times: 60 local: 10 avg_ratio: 20 loadsweep x_ary: 1 excel verbose: 0
+./sfra name: apte_x_ary=2 file: tests/apte cycles: 60000 warmup: 1000 n_fps: 10 n_best: 3 mode: 2.5D alpha: 0.25 fp_criteria: A scale: 1.366 seed: 1 times: 60 local: 10 avg_ratio: 20 loadsweep x_ary: 2 excel verbose: 0
+./sfra name: apte_x_ary=3 file: tests/apte cycles: 60000 warmup: 1000 n_fps: 10 n_best: 3 mode: 2.5D alpha: 0.25 fp_criteria: A scale: 1.366 seed: 1 times: 60 local: 10 avg_ratio: 20 loadsweep x_ary: 3 excel verbose: 0
+
+./sfra name: xerox_x_ary=0 file: tests/xerox cycles: 60000 warmup: 1000 n_fps: 10 n_best: 3 mode: 2.5D alpha: 0.25 fp_criteria: A scale: 1.794 seed: 1 times: 160 local: 6 avg_ratio: 30 loadsweep excel verbose: 0
+./sfra name: xerox_x_ary=1 file: tests/xerox cycles: 60000 warmup: 1000 n_fps: 10 n_best: 3 mode: 2.5D alpha: 0.25 fp_criteria: A scale: 1.794 seed: 1 times: 160 local: 6 avg_ratio: 30 loadsweep x_ary: 1 excel verbose: 0
+./sfra name: xerox_x_ary=2 file: tests/xerox cycles: 60000 warmup: 1000 n_fps: 10 n_best: 3 mode: 2.5D alpha: 0.25 fp_criteria: A scale: 1.794 seed: 1 times: 160 local: 6 avg_ratio: 30 loadsweep x_ary: 2 excel verbose: 0
+./sfra name: xerox_x_ary=3 file: tests/xerox cycles: 60000 warmup: 1000 n_fps: 10 n_best: 3 mode: 2.5D alpha: 0.25 fp_criteria: A scale: 1.794 seed: 1 times: 160 local: 6 avg_ratio: 30 loadsweep x_ary: 3 excel verbose: 0
+
+./sfra name: hp_x_ary=0 file: tests/hp cycles: 60000 warmup: 1000 n_fps: 10 n_best: 3 mode: 2.5D alpha: 0.25 fp_criteria: A scale: 2.357 seed: 1 times: 120 local: 10 avg_ratio: 30 loadsweep excel verbose: 0
+./sfra name: hp_x_ary=1 file: tests/hp cycles: 60000 warmup: 1000 n_fps: 10 n_best: 3 mode: 2.5D alpha: 0.25 fp_criteria: A scale: 2.357 seed: 1 times: 120 local: 10 avg_ratio: 30 loadsweep x_ary: 1 excel verbose: 0
+./sfra name: hp_x_ary=2 file: tests/hp cycles: 60000 warmup: 1000 n_fps: 10 n_best: 3 mode: 2.5D alpha: 0.25 fp_criteria: A scale: 2.357 seed: 1 times: 120 local: 10 avg_ratio: 30 loadsweep x_ary: 2 excel verbose: 0
+./sfra name: hp_x_ary=3 file: tests/hp cycles: 60000 warmup: 1000 n_fps: 10 n_best: 3 mode: 2.5D alpha: 0.25 fp_criteria: A scale: 2.357 seed: 1 times: 120 local: 10 avg_ratio: 30 loadsweep x_ary: 3 excel verbose: 0
+
+./sfra name: ami25_x_ary=0 file: tests/ami25 cycles: 60000 warmup: 1000 n_fps: 10 n_best: 3 mode: 2.5D alpha: 0.25 fp_criteria: A scale: 5.512 seed: 1 times: 400 local: 7 avg_ratio: 40 loadsweep excel verbose: 0
+./sfra name: ami25_x_ary=1 file: tests/ami25 cycles: 60000 warmup: 1000 n_fps: 10 n_best: 3 mode: 2.5D alpha: 0.25 fp_criteria: A scale: 5.512 seed: 1 times: 400 local: 7 avg_ratio: 40 loadsweep x_ary: 1 excel verbose: 0
+./sfra name: ami25_x_ary=2 file: tests/ami25 cycles: 60000 warmup: 1000 n_fps: 10 n_best: 3 mode: 2.5D alpha: 0.25 fp_criteria: A scale: 5.512 seed: 1 times: 400 local: 7 avg_ratio: 40 loadsweep x_ary: 2 excel verbose: 0
+./sfra name: ami25_x_ary=3 file: tests/ami25 cycles: 60000 warmup: 1000 n_fps: 10 n_best: 3 mode: 2.5D alpha: 0.25 fp_criteria: A scale: 5.512 seed: 1 times: 400 local: 7 avg_ratio: 40 loadsweep x_ary: 3 excel verbose: 0
+
+./sfra name: ami33_x_ary=0 file: tests/ami33 cycles: 60000 warmup: 1000 n_fps: 10 n_best: 3 mode: 2.5D alpha: 0.25 fp_criteria: A scale: 8.071 seed: 1 times: 500 local: 8 avg_ratio: 40 loadsweep excel verbose: 0
+./sfra name: ami33_x_ary=1 file: tests/ami33 cycles: 60000 warmup: 1000 n_fps: 10 n_best: 3 mode: 2.5D alpha: 0.25 fp_criteria: A scale: 8.071 seed: 1 times: 500 local: 8 avg_ratio: 40 loadsweep x_ary: 1 excel verbose: 0
+./sfra name: ami33_x_ary=2 file: tests/ami33 cycles: 60000 warmup: 1000 n_fps: 10 n_best: 3 mode: 2.5D alpha: 0.25 fp_criteria: A scale: 8.071 seed: 1 times: 500 local: 8 avg_ratio: 40 loadsweep x_ary: 2 excel verbose: 0
+./sfra name: ami33_x_ary=3 file: tests/ami33 cycles: 60000 warmup: 1000 n_fps: 10 n_best: 3 mode: 2.5D alpha: 0.25 fp_criteria: A scale: 8.071 seed: 1 times: 500 local: 8 avg_ratio: 40 loadsweep x_ary: 3 excel verbose: 0
+
+./sfra name: ami49_x_ary=0 file: tests/ami49 cycles: 60000 warmup: 1000 n_fps: 10 n_best: 3 mode: 2.5D alpha: 0.25 fp_criteria: A scale: 1.386 seed: 1 times: 500 local: 8 avg_ratio: 40 loadsweep excel verbose: 0
+./sfra name: ami49_x_ary=1 file: tests/ami49 cycles: 60000 warmup: 1000 n_fps: 10 n_best: 3 mode: 2.5D alpha: 0.25 fp_criteria: A scale: 1.386 seed: 1 times: 500 local: 8 avg_ratio: 40 loadsweep x_ary: 1 excel verbose: 0
+./sfra name: ami49_x_ary=2 file: tests/ami49 cycles: 60000 warmup: 1000 n_fps: 10 n_best: 3 mode: 2.5D alpha: 0.25 fp_criteria: A scale: 1.386 seed: 1 times: 500 local: 8 avg_ratio: 40 loadsweep x_ary: 2 excel verbose: 0
+./sfra name: ami49_x_ary=3 file: tests/ami49 cycles: 60000 warmup: 1000 n_fps: 10 n_best: 3 mode: 2.5D alpha: 0.25 fp_criteria: A scale: 1.386 seed: 1 times: 500 local: 8 avg_ratio: 40 loadsweep x_ary: 3 excel verbose: 0

@@ -1,0 +1,6 @@
+./sfra name: apte_bufsweep file: tests/apte cycles: 60000 warmup: 1000 n_fps: 10 n_best: 3 mode: 2.5D alpha: 0.25 fp_criteria: A scale: 1.366 seed: 1 times: 60 local: 10 avg_ratio: 20 loadsweep bufsweep excel verbose: 0
+./sfra name: xerox_bufsweep file: tests/xerox cycles: 60000 warmup: 1000 n_fps: 10 n_best: 3 mode: 2.5D alpha: 0.25 fp_criteria: A scale: 1.794 seed: 1 times: 160 local: 6 avg_ratio: 30 loadsweep bufsweep excel verbose: 0
+./sfra name: hp_bufsweep file: tests/hp cycles: 60000 warmup: 1000 n_fps: 10 n_best: 3 mode: 2.5D alpha: 0.25 fp_criteria: A scale: 2.357 seed: 1 times: 120 local: 10 avg_ratio: 30 loadsweep bufsweep excel verbose: 0
+./sfra name: ami25_bufsweep file: tests/ami25 cycles: 60000 warmup: 1000 n_fps: 10 n_best: 3 mode: 2.5D alpha: 0.25 fp_criteria: A scale: 5.512 seed: 1 times: 400 local: 7 avg_ratio: 40 loadsweep bufsweep excel verbose: 0
+./sfra name: ami33_bufsweep file: tests/ami33 cycles: 60000 warmup: 1000 n_fps: 10 n_best: 3 mode: 2.5D alpha: 0.25 fp_criteria: A scale: 8.071 seed: 1 times: 500 local: 8 avg_ratio: 40 loadsweep bufsweep excel verbose: 0
+./sfra name: ami49_bufsweep file: tests/ami49 cycles: 60000 warmup: 1000 n_fps: 10 n_best: 3 mode: 2.5D alpha: 0.25 fp_criteria: A scale: 1.386 seed: 1 times: 500 local: 8 avg_ratio: 40 loadsweep bufsweep excel verbose: 0

@@ -1,0 +1,48 @@
+The tool has a hidden option:
+
+TESTCASE: (int)
+
+This can be used to (re)create trace files corresponding to each of the source cores
+where packets are injected; and one global file with all packets of all sources.
+That is, there will be created small .trs files for each source core, identified 
+by the number/id of the core, such as "ami25.0.trs, ami25.1.trs, ami25.3.trs, etc."
+(with "-1" as a BLANK file that is going to be used by unassigned cores/routers) 
+and a big .trs file with the same data replicated, such as "ami25.trs". 
+
+These files are created as follows: for the floorplan/testcase given with the 
+"file:" argument, the number of connections between each pair of cores will be 
+computed and multiplied by the integer number given via this hidden option. 
+The resulting number determines the number of packets created for each source 
+and written in the corresponding .trs file. For each source, the packets 
+are created and scheduled for injection within the time interval from 0 to 10000ns.
+One should start with "TESTCASE: 1" and see how many packets are created 
+(or verify with a simple simulation run of the tool if the throughput-saturation point is 
+adequate) and, if necessary, increase this number until the desired saturation point 
+is achieved.
+
+If you have a new floorplan testcase (see the ".fp" files for the required format),
+then you can use this hidden option to generate trace files for it.
+
+
+Notes:
+(1)  If you use this hidden option the current trace files will be overwritten!
+(2)  I know, this is a rather uncomfortable way of generating trace files for a given
+floorplan testcase. This was the original way of the "popnet" NOC simulator - and
+would have required extra work to make it simpler.
+It has however the advantage of creating them once; after that they can be used
+directly for multiple simulations. Also, it is an extremely simple way of doing it.
+The time interval 10000ns can be only modified by changing the code inside
+fp_plan.cpp (search for TOTAL_CYCLES_COUNT and change accordingly, then recompile).
+As a "TO DO" action item: I will integrate the creation and injection of packets 
+within the simulator itself. That will eliminate the need to work with so many 
+.trs files.
+
+
+Here are examples of how to create trace files:
+
+./sfra file: tests/apte cycles: 60000 warmup: 1000 n_fps: 1 n_best: 1 alpha: 0.25 fp_criteria: A scale: 1.366 seed: 1 mode: 2.5D gui p: 2 times: 60 local: 10 avg_ratio: 20 TESTCASE: 35
+./sfra file: tests/xerox cycles: 60000 warmup: 1000 n_fps: 1 n_best: 1 alpha: 0.25 fp_criteria: A scale: 1.794 seed: 1 mode: 2.5D gui p: 2 times: 160 local: 10 avg_ratio: 30 TESTCASE: 18
+./sfra file: tests/hp cycles: 60000 warmup: 1000 n_fps: 1 n_best: 1 alpha: 0.25 fp_criteria: A scale: 2.357 seed: 1 mode: 2.5D gui p: 2 times: 120 local: 10 avg_ratio: 30 TESTCASE: 36
+./sfra file: tests/ami25 cycles: 60000 warmup: 1000 n_fps: 1 n_best: 1 alpha: 0.25 fp_criteria: A scale: 5.512 seed: 1 mode: 2.5D gui p: 2 times: 400 local: 10 avg_ratio: 40 TESTCASE: 170
+./sfra file: tests/ami33 cycles: 60000 warmup: 1000 n_fps: 1 n_best: 1 alpha: 0.25 fp_criteria: A scale: 8.071 seed: 1 mode: 2.5D gui p: 2 times: 400 local: 10 avg_ratio: 40 TESTCASE: 100
+./sfra file: tests/ami49 cycles: 60000 warmup: 1000 n_fps: 1 n_best: 1 alpha: 0.25 fp_criteria: A scale: 1.386 seed: 1 mode: 2.5D gui p: 2 times: 400 local: 10 avg_ratio: 40 TESTCASE: 37
